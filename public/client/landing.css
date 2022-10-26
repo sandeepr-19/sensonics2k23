@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Saira+Stencil+One);
+/*------------------------------------------
+ space wrap canvas 
+ -------------------------------------------*/
+ canvas {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+  }
+  
+/* ---------------------------
+general
+------------------------------ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+  }
+
+
+  /* ---------------------------
+nav
+------------------------------ */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .subcontainer {
+    width: 85%;
+    margin: auto;
+  }
+  
+  .navbar {
+    width: 100%;
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav-branding {
+    font-size: 2rem;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: rgb(255, 253, 253);
+  }
+
+  @media(max-width:1600px) {
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media(max-width:900px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 50px;
+      gap: 0;
+      flex-direction: column;
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .nav-item {
+      margin: 16px 0;
+      color: cornsilk;
+      overflow: hidden;
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  }
+  /* ---------------------------
+hero
+------------------------------ */
+  #hero {
+    margin-top: 50px;
+    height: 100vh;
+    border: 1px solid black;
+    color:cornsilk ;
+  }
+  
+  
+  #event-name{
+    font-size: 12vw;
+    font-weight: 20%;
+     font-family: "Saira Stencil One", cursive;
+     overflow: hidden;
+   }
+   #hinge{
+    font-size: 11vw;
+    font-weight: 20%;
+     font-family: "Saira Stencil One", cursive;
+     overflow: hidden;
+   }
+  
+#hero-dep{
+    font-size: 5vw;
+    overflow: hidden;
+    text-align:center;
+
+  }
+
+        /* the fying hero */
+
+        #boom{
+            position: absolute;
+            top:5%;
+            right: 100%;
+            max-width: 30%;
+            max-height: 50%;
+            }
+
+ /*-------------------------------------- 
+about
+ -------------------------------------------*/
+ #about {color: cornsilk;
+    border: 1px solid black;
+    padding: 15px;
+    padding-left: 15px;
+  }
+
+   /*-------------------------------------- 
+events
+ -------------------------------------------*/
+ .ss{
+    background-repeat: no-repeat;
+height: 90vh;background-size: cover; 
+ }
+ .event1{background-image: url("https://cdn.create.vista.com/api/media/medium/461285704/stock-photo-abstract-polygonal-background-pastel-colors?token=");}
+  .event2{color: whitesmoke;
+    background-image: url("https://cdn.wallpapersafari.com/58/58/n6HC9s.jpg");
+ }
+.event3{
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2Fkeyboard.jpg&signature=54d01c300348d214a4637cc3f9512772");
+color: whitesmoke;
+}
+.event4{
+    background-image: url("https://1.bp.blogspot.com/-7XX4EALtmpg/YBMbGiT1ymI/AAAAAAAAeZY/8h760GMBkzM5eTqRhOBTq9Qec7pJj7ZzQCLcBGAsYHQ/s16000/heroscreen.cc-V1-01282021-CIRCUIT-HD.png");
+    color: whitesmoke; 
+   
+}
+.event5{
+    background-image: url("../assets/sherlock-holmes-concept-etiqueta-de-madera-de-tools-del-detective-privado-65190121.png");
+    color:whitesmoke;
+}
+.event6{
+    background-image: url("https://media.istockphoto.com/photos/presentation-concept-picture-id821475092?b=1&k=20&m=821475092&s=170667a&w=0&h=kjdfnDaNOE8NUzbo1jy5AyfmVsqrM_1SqQW4QtF7mPs=");
+}
+@media(max-width:500px) {
+    .event4{background-image:url("https://1.bp.blogspot.com/-sMYtBAPkrms/YBMdUEXIx_I/AAAAAAAAeZg/FErofYz40Sgdk9f4xtEbgPwdgGx9PJHQQCLcBGAsYHQ/d/heroscreen.cc-V1-01282021-circuit-board-HD.png");
+}}
+@media(max-width:501px) {
+    .event5{background-image:url("../assets/concept-image-investigation-private-detective-fedora-hat-magnifying-glass-vintage-items-over-wooden-table-168724919.png");}
+}
+ #ee{
+    margin-top: 70px;
+   margin-bottom: 20vh;
+    font-size: 300%;
+   }
+   #eh{
+    font-size: 250%;
+   }
+   #eh1{
+    font-size: 200%;
+   }
+   #ep{
+    font-size: 100%;
+   }
+   #er{
+    font-size: 50%;
+   }
