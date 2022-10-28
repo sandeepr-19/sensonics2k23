@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        // CSS only
+        link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx' crossorigin='anonymous')
+        // JavaScript Bundle with Popper
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa' crossorigin='anonymous')
+        //green sock
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        //animate css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        link(rel='stylesheet' href='./client/event.css')
+        title Eareyes
+    body.align-items-center.justify-content-center.d-flex.flex-column
+        p.h1 Sparkle 
+        p.h2 Paper Presentaion 
+        p.h4 Come amaze us with your unique ideas that aim to make daily life easier and more comfortable.
+        .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
+            form.needs-validation(action="", method="post", novalidate)
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="text",name="name",required)
+                    label(for="name")  Name 
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="text", name="rollno",required)
+                    label(for="rollno")  Roll No
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="email", name="email",required)
+                    label(for="email")  Email
+                .form-floating.mb-3.mt-3
+                    input.form-control( name="department",list="dep",required)
+                    datalist#dep 
+                        option(value="eie") 
+                        option(value="cse") 
+                        option(value="it") 
+                        option(value="eee") 
+                        option(value="mech") 
+                        option(value="civil") 
+                        option(value="ft") 
+                    label(for="department")  Depatment
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="text", name="mobileno",maxlength="10",required)
+                    label(for="mobileno")  Whatsapp No
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="file", name="abstract",required)
+                    label(for="abstract")  Abstract
+                .form-floating.mb-3.mt-3.d-flex
+                    button.btn.btn-primary(type="submit").mx-auto  Submit
+                    
+            
+        script(src="./client/event.js") 
+        script(src="./client/three.min.js") 
+        script(src="./client/space.js") 

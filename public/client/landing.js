@@ -41,3 +41,8 @@ gsap
   .to("#hinge", { duration: 1, rotation: 50 }, "-=4")
   .to("#hinge", { y: "200vh", duration: 1 }, "-=3")
   .to("#hinge", { display: "none" }, "-=2");
+
+//events redirection
+document.getElementById("er1").addEventListener("click", () => {
+  window.location.href = window.location.href + "event1";
+});

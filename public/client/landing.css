@@ -58,11 +58,11 @@ nav
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
   }
   
   .nav-menu {
     display: flex;
+    color: cornsilk;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
@@ -188,6 +188,8 @@ events
     background-repeat: no-repeat;
 height: 90vh;background-size: cover; 
  }
+ 
+ 
  .event1{background-image: url("https://cdn.create.vista.com/api/media/medium/461285704/stock-photo-abstract-polygonal-background-pastel-colors?token=");}
   .event2{color: whitesmoke;
     background-image: url("https://cdn.wallpapersafari.com/58/58/n6HC9s.jpg");
@@ -206,8 +208,8 @@ color: whitesmoke;
     color:whitesmoke;
 }
 .event6{
-    background-image: url("https://media.istockphoto.com/photos/presentation-concept-picture-id821475092?b=1&k=20&m=821475092&s=170667a&w=0&h=kjdfnDaNOE8NUzbo1jy5AyfmVsqrM_1SqQW4QtF7mPs=");
-}
+    background-image: url("https://img.freepik.com/free-vector/colorful-background-with-wave-lines_1017-33501.jpg?w=2000");
+color: whitesmoke;}
 @media(max-width:500px) {
     .event4{background-image:url("https://1.bp.blogspot.com/-sMYtBAPkrms/YBMdUEXIx_I/AAAAAAAAeZg/FErofYz40Sgdk9f4xtEbgPwdgGx9PJHQQCLcBGAsYHQ/d/heroscreen.cc-V1-01282021-circuit-board-HD.png");
 }}
@@ -228,6 +230,17 @@ color: whitesmoke;
    #ep{
     font-size: 100%;
    }
-   #er{
-    font-size: 50%;
+   #er1,#er2,#er3,#er4,#er5,#er6{
+    font-size: 2vh;
+    font-weight: 50%;
+    width: 10vw;
+    height: 3vh;transition: 0.5s;
+    background: inherit;
+   }
+   #er2,#er3,#er4,#er5{
+    color:whitesmoke
+   }
+
+   #er1,#er2,#er3,#er4,#er5,#er6 :hover{box-shadow: 0 0 3px black;
+    top: -10px;
    }
