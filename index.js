@@ -24,7 +24,7 @@ app.get("/event3", (req, res) => {
 app.get("/event4", (req, res) => {
   res.render("event4.pug");
 });
-app.get("/event4", (req, res) => {
+app.get("/event5", (req, res) => {
   res.render("event5.pug");
 });
 app.get("/event6", (req, res) => {

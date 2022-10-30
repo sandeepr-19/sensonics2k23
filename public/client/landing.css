@@ -1,4 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Saira+Stencil+One);
+@import url(http://fonts.cdnfonts.com/css/entanglement);
+@import url('http://fonts.cdnfonts.com/css/alphacentauri');
+@import url(http://fonts.cdnfonts.com/css/spaceman);
+@import url('http://fonts.cdnfonts.com/css/potra');
+@font-face {
+  font-family: 'Chronosfer';
+  src: local('Chronosfer Italic'), local('Chronosfer-Italic'),
+      url('../assets/Chronosfer-Italic.woff2') format('woff2'),
+      url('../assets/Chronosfer-Italic.woff') format('woff'),
+      url('../assets/Chronosfer-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Coax';
+  src: local('Coax'), local('Coax-Regular'),
+      url('../assets/Coax-Regular.otf') format('truetype');
+  font-style: regular;
+}
+@font-face {
+  font-family: 'MBF Space';
+  src: url('../assets/MBFSpace.eot');
+  src: local('MBF Space'), local('MBFSpace'),
+      url('../assets/MBFSpace.eot?#iefix') format('embedded-opentype'),
+      url('../assets/MBFSpace.woff2') format('woff2'),
+      url('../assets/MBFSpace.woff') format('woff'),
+      url('../assets/MBFSpace.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*------------------------------------------
  space wrap canvas 
  -------------------------------------------*/
@@ -8,7 +40,6 @@
     left:0;
     z-index: -1;
   }
-  
 /* ---------------------------
 general
 ------------------------------ */
@@ -27,10 +58,12 @@ general
 nav
 ------------------------------ */
   header {
-    position: fixed;
     top: 0;
+    position:relative;
+    display: block;
     width: 100%;
     background-color: rgb(0, 0, 0);
+    font-family: 'MBF Space';
   }
 
   li {
@@ -118,7 +151,7 @@ nav
       background-color: rgb(0, 0, 0);
       width: 100%;
       text-align: center;
-      transition: 0.3s;
+     overflow: hidden;
     }
   
     .nav-item {
@@ -145,28 +178,27 @@ hero
   #event-name{
     font-size: 12vw;
     font-weight: 20%;
-     font-family: "Saira Stencil One", cursive;
+    font-family: 'MBF Space';
      overflow: hidden;
    }
    #hinge{
     font-size: 11vw;
     font-weight: 20%;
-     font-family: "Saira Stencil One", cursive;
+    font-family: 'MBF Space';
      overflow: hidden;
    }
   
 #hero-dep{
-    font-size: 5vw;
+    font-size: 3vw;
     overflow: hidden;
     text-align:center;
-
+    font-family: 'Potra', sans-serif;
   }
-
         /* the fying hero */
 
         #boom{
             position: absolute;
-            top:5%;
+            top:3.5%;
             right: 100%;
             max-width: 30%;
             max-height: 50%;
@@ -179,14 +211,27 @@ about
     border: 1px solid black;
     padding: 15px;
     padding-left: 15px;
+    overflow: hidden;
+    font-size: 3px;
   }
+  #about .h2{font-family: 'MBF Space';
+  }
+#about .h6{
+  font-family: 'Coax';
+}
 
    /*-------------------------------------- 
 events
  -------------------------------------------*/
+ #events{
+  font-family: "MBF Space";
+ }
  .ss{
     background-repeat: no-repeat;
-height: 90vh;background-size: cover; 
+height: auto;background-size: cover; 
+width: 70vw;
+margin: auto;
+margin-bottom: 10px;
  }
  
  
@@ -220,6 +265,7 @@ color: whitesmoke;}
     margin-top: 70px;
    margin-bottom: 20vh;
     font-size: 300%;
+    color: cornsilk;
    }
    #eh{
     font-size: 250%;
@@ -233,14 +279,45 @@ color: whitesmoke;}
    #er1,#er2,#er3,#er4,#er5,#er6{
     font-size: 2vh;
     font-weight: 50%;
-    width: 10vw;
-    height: 3vh;transition: 0.5s;
-    background: inherit;
    }
    #er2,#er3,#er4,#er5{
     color:whitesmoke
    }
-
-   #er1,#er2,#er3,#er4,#er5,#er6 :hover{box-shadow: 0 0 3px black;
-    top: -10px;
+#er1{
+  color: black;
+}
+   /* schedule */
+   #schedule{
+    color: cornsilk;
+   }
+   #schedule{
+  font-family: "MBF Space";
+   }
+   @media (max-width:400px) {
+    #schedule .se{
+      float: right;
+    }
+   }
+   @media (min-width:401px) {
+   .spin{ text-align: center;
+   } 
+   }
+/* dev */
+#dev{
+  color: cornsilk;
+}
+.dd,.gt{
+  font-family: 'Potra', sans-serif;
+}
+.creator{
+  font-family: 'MBF Space';font-size: 5vw;
+}
+@media (max-width:500px){.creator{font-size: 18vw;}}
+.dd1,.ddb,.creator{
+  text-align:center;
+}
+   .social{
+    display: block;
+    height: 35px;
+    width: 35px;
    }
