@@ -222,32 +222,17 @@ margin-bottom: 10px;
  }
  
  
- .event1{background-image: url("https://cdn.create.vista.com/api/media/medium/461285704/stock-photo-abstract-polygonal-background-pastel-colors?token=");}
-  .event2{color: whitesmoke;
-    background-image: url("https://cdn.wallpapersafari.com/58/58/n6HC9s.jpg");
- }
-.event3{
-    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F12%2Fkeyboard.jpg&signature=54d01c300348d214a4637cc3f9512772");
-color: whitesmoke;
-}
-.event4{
+ .event5,.event6{background-image: url("https://cdn.create.vista.com/api/media/medium/461285704/stock-photo-abstract-polygonal-background-pastel-colors?token=");}
+  
+.event4,.event1,.event2,.event3{
     background-image: url("https://1.bp.blogspot.com/-7XX4EALtmpg/YBMbGiT1ymI/AAAAAAAAeZY/8h760GMBkzM5eTqRhOBTq9Qec7pJj7ZzQCLcBGAsYHQ/s16000/heroscreen.cc-V1-01282021-CIRCUIT-HD.png");
     color: whitesmoke; 
    
 }
-.event5{
-    background-image: url("../assets/sherlock-holmes-concept-etiqueta-de-madera-de-tools-del-detective-privado-65190121.png");
-    color:whitesmoke;
-}
-.event6{
-    background-image: url("https://img.freepik.com/free-vector/colorful-background-with-wave-lines_1017-33501.jpg?w=2000");
-color: whitesmoke;}
+
 @media(max-width:500px) {
-    .event4{background-image:url("https://1.bp.blogspot.com/-sMYtBAPkrms/YBMdUEXIx_I/AAAAAAAAeZg/FErofYz40Sgdk9f4xtEbgPwdgGx9PJHQQCLcBGAsYHQ/d/heroscreen.cc-V1-01282021-circuit-board-HD.png");
+    .event4,.event1,.event2,.event3{background-image:url("https://1.bp.blogspot.com/-sMYtBAPkrms/YBMdUEXIx_I/AAAAAAAAeZg/FErofYz40Sgdk9f4xtEbgPwdgGx9PJHQQCLcBGAsYHQ/d/heroscreen.cc-V1-01282021-circuit-board-HD.png");
 }}
-@media(max-width:501px) {
-    .event5{background-image:url("../assets/concept-image-investigation-private-detective-fedora-hat-magnifying-glass-vintage-items-over-wooden-table-168724919.png");}
-}
  #ee{
     margin-top: 70px;
    margin-bottom: 20vh;
@@ -267,12 +252,12 @@ color: whitesmoke;}
     font-size: 2vh;
     font-weight: 50%;
    }
-   #er2,#er3,#er4,#er5{
+   #er2,#er3,#er4,#er1{
     color:whitesmoke
    }
-#er1{
-  color: black;
-}
+   #er5,#er6{
+    color:black
+   }
    /* schedule */
    #schedule{
     color: cornsilk;
