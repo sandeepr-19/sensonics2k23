@@ -11,19 +11,27 @@ html(lang='en')
         //green sock
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-        //animate css
-        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+        
         link(rel='stylesheet' href='./client/event.css')
         title Eareyes
     body.align-items-center.justify-content-center.d-flex.flex-column
         p.h1 Sparkle 
         p.h2 Paper Presentaion 
-        p.h4 Come amaze us with your unique ideas that aim to make daily life easier and more comfortable.
+        p.h3 rules
+        .d-flex.ru.flex-column.mx-3
+            p.h6 a team should contain maximum 3 members
+            br 
+            p.h6 submit your abstract before 8-11.both hard copy and soft copy of  both presentation and ieee format
+            br 
+            p.h6 participants shud use the template attached here
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
-            form.needs-validation(action="", method="post", novalidate)
+            form.needs-validation(action="event1_d", method="post", novalidate)
                 .form-floating.mb-3.mt-3
-                    input.form-control(type="text",name="name",required)
-                    label(for="name")  Name 
+                    input.form-control#tname(type="text",name="tname",required)
+                    label(for="tname")  Team Name 
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="text",name="name1",required)
+                    label(for="name1")  Team Leader Name 
                 .form-floating.mb-3.mt-3
                     input.form-control(type="text", name="rollno",required)
                     label(for="rollno")  Roll No
@@ -31,26 +39,43 @@ html(lang='en')
                     input.form-control(type="email", name="email",required)
                     label(for="email")  Email
                 .form-floating.mb-3.mt-3
-                    input.form-control( name="department",list="dep",required)
-                    datalist#dep 
-                        option(value="eie") 
-                        option(value="cse") 
-                        option(value="it") 
-                        option(value="eee") 
-                        option(value="mech") 
-                        option(value="civil") 
-                        option(value="ft") 
-                    label(for="department")  Depatment
-                .form-floating.mb-3.mt-3
                     input.form-control(type="text", name="mobileno",maxlength="10",required)
                     label(for="mobileno")  Whatsapp No
                 .form-floating.mb-3.mt-3
-                    input.form-control(type="file", name="abstract",required)
-                    label(for="abstract")  Abstract
+                    p.h6 select the no of team members
+                    .d-flex.btn-group.align-items-center.justify-content-center
+                        button.btn.btn-dark#m1(type='button') 1
+                        button.btn.btn-dark#m2(type='button') 2
+                        button.btn.btn-dark#m3(type='button') 3
+
+                .form-floating.mb-3.mt-3#mn2
+                    input.form-control(type="text",name="name2",value="nil")
+                    label(for="name2")  Teammate 2 Name 
+                .form-floating.mb-3.mt-3#mr2
+                    input.form-control(type="text", name="rollno2",value="nil")
+                    label(for="rollno2")  Roll No
+                
+                .form-floating.mb-3.mt-3#mn3
+                    input.form-control(type="text",name="name3",value="nil")
+                    label(for="name3")  Teammate 3 Name 
+                .form-floating.mb-3.mt-3#mr3
+                    input.form-control(type="text", name="rollno3",value="nil")
+                    label(for="rollno3")  Roll No
+                .form-floating.mb-3.mt-3
+                    input.form-control(type="text",name="title",required)
+                    label(for="title")  Paper Title 
+                .mb-3.mt-3
+                    p.mb-3.mt-3.h6 Abstract should not be more than 200 words.
+                    .form-floating
+                        input.form-control(type="text", name="abstract",required)
+                        label(for="abstract")  Abstract
+                .mb-3.mt-3
+                    p.h6 Make sure you join the whatsapp group.
+                    a(href="https://chat.whatsapp.com/L3sbR5aajRU2w4oVApVQEN") 
                 .form-floating.mb-3.mt-3.d-flex
-                    button.btn.btn-primary(type="submit").mx-auto  Submit
+                    button.btn.btn-dark(type="submit").mx-auto  Submit
                     
             
-        script(src="./client/event.js") 
+        script(src="./client/event.js")
         script(src="./client/three.min.js") 
         script(src="./client/space.js") 

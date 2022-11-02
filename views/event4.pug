@@ -18,9 +18,16 @@ html(lang='en')
     body.align-items-center.justify-content-center.d-flex.flex-column
         p.h1 circuitron 
         p.h2 circuit debugging 
-        p.h4 "Knowledge is power". To test your power in Network theory and Basic Electronics,"Watt" other opportunity better than circuitron.
+        p.h3 rules
+        .d-flex.ru.flex-column.mx-3
+            p.h6 a team should contain maximum 3 members
+            br 
+            p.h6 submit your abstract before 8-11.
+            br 
+            p.h6 both hardware and software in working condition should be presented.
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
-            form.needs-validation(action="", method="post", novalidate)
+            form.needs-validation(action="event4_d", method="post", novalidate)
+                 
                 .form-floating.mb-3.mt-3
                     input.form-control(type="text",name="name",required)
                     label(for="name")  Name 
@@ -31,23 +38,15 @@ html(lang='en')
                     input.form-control(type="email", name="email",required)
                     label(for="email")  Email
                 .form-floating.mb-3.mt-3
-                    input.form-control( name="department",list="dep",required)
-                    datalist#dep 
-                        option(value="eie") 
-                        option(value="cse") 
-                        option(value="it") 
-                        option(value="eee") 
-                        option(value="mech") 
-                        option(value="civil") 
-                        option(value="ft") 
-                    label(for="department")  Depatment
-                .form-floating.mb-3.mt-3
                     input.form-control(type="text", name="mobileno",maxlength="10",required)
                     label(for="mobileno")  Whatsapp No
+                .mb-3.mt-3
+                    p.h6 Make sure you join the whatsapp group.
+                    a(href="https://chat.whatsapp.com/BX0oYaYQ98GGEhEZjqn4sp")
                 .form-floating.mb-3.mt-3.d-flex
-                    button.btn.btn-primary(type="submit").mx-auto  Submit
+                    button.btn.btn-dark(type="submit").mx-auto  Submit
                     
             
-        script(src="./client/event.js") 
+        script(src="./client/event34.js") 
         script(src="./client/three.min.js") 
         script(src="./client/space.js") 

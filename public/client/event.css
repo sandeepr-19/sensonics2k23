@@ -4,9 +4,10 @@ canvas {
     left:0;
     z-index: -1;
   }
-p{
+p, .ru{
   color: cornsilk;
 }
 #form{
   max-width: 1000px;
 }
+#mr2,#mr3,#mn2,#mn3,.mem{display: none;}

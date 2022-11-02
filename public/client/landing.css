@@ -156,7 +156,7 @@ hero
 ------------------------------ */
   #hero {
     margin-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
     border: 1px solid black;
     color:cornsilk ;
   }
