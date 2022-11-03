@@ -104,7 +104,7 @@ app.post("/event2_d", enc, (req, res) => {
     const result = await dbo.collection("event2").insertOne(doc);
     db.close();
   });
-  res.send("data successfully stored");
+  res.render("landing.pug");
 });
 
 app.post("/event3_d", enc, (req, res) => {
@@ -125,7 +125,7 @@ app.post("/event3_d", enc, (req, res) => {
     const result = await dbo.collection("event3").insertOne(doc);
     db.close();
   });
-  res.send("data successfully stored");
+  res.render("landing.pug");
 });
 
 app.post("/event4_d", enc, (req, res) => {
@@ -146,7 +146,7 @@ app.post("/event4_d", enc, (req, res) => {
     const result = await dbo.collection("event4").insertOne(doc);
     db.close();
   });
-  res.send("data successfully stored");
+  res.render("landing.pug");
 });
 
 app.post("/event5_d", enc, (req, res) => {
@@ -177,7 +177,7 @@ app.post("/event5_d", enc, (req, res) => {
     const result = await dbo.collection("event5").insertOne(doc);
     db.close();
   });
-  res.send("data successfully stored");
+  res.render("landing.pug");
 });
 
 app.post("/event6_d", enc, (req, res) => {

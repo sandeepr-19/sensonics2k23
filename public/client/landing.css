@@ -161,7 +161,6 @@ hero
     color:cornsilk ;
   }
   
-  
   #event-name{
     font-size: 12vw;
     font-weight: 20%;
@@ -185,7 +184,7 @@ hero
 
         #boom{
             position: absolute;
-            top:3.5%;
+            top:3.7%;
             right: 100%;
             max-width: 30%;
             max-height: 50%;
