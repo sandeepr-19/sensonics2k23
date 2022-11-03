@@ -318,20 +318,20 @@ gsap
   });
 //events redirection
 document.getElementById("er1").addEventListener("click", () => {
-  window.location.href = window.location.href + "event1";
+  window.location.href = window.location.origin + "/event1";
 });
 document.getElementById("er2").addEventListener("click", () => {
-  window.location.href = window.location.href + "event2";
+  window.location.href = window.location.origin + "/event2";
 });
 document.getElementById("er3").addEventListener("click", () => {
-  window.location.href = window.location.href + "event3";
+  window.location.href = window.location.origin + "/event3";
 });
 document.getElementById("er4").addEventListener("click", () => {
-  window.location.href = window.location.href + "event4";
+  window.location.href = window.location.origin + "/event4";
 });
 document.getElementById("er5").addEventListener("click", () => {
-  window.location.href = window.location.href + "event5";
+  window.location.href = window.location.origin + "/event5";
 });
 document.getElementById("er6").addEventListener("click", () => {
-  window.location.href = window.location.href + "event6";
+  window.location.href = window.location.origin + "/event6";
 });

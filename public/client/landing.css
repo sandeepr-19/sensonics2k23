@@ -89,7 +89,7 @@ nav
   }
   
   .nav-branding {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   
   .hamburger {
@@ -180,6 +180,10 @@ hero
     text-align:center;
     font-family: 'Potra', sans-serif;
   }
+
+.logo{
+  height: 30px;
+}
         /* the fying hero */
 
         #boom{
@@ -224,7 +228,7 @@ margin-bottom: 10px;
  .event5,.event6{background-image: url("https://cdn.create.vista.com/api/media/medium/461285704/stock-photo-abstract-polygonal-background-pastel-colors?token=");}
   
 .event4,.event1,.event2,.event3{
-    background-image: url("https://1.bp.blogspot.com/-7XX4EALtmpg/YBMbGiT1ymI/AAAAAAAAeZY/8h760GMBkzM5eTqRhOBTq9Qec7pJj7ZzQCLcBGAsYHQ/s16000/heroscreen.cc-V1-01282021-CIRCUIT-HD.png");
+    background-image:linear-gradient(to left, rgba(38, 10, 50, 0.52), rgba(0, 0, 0, 0.67)), url("https://1.bp.blogspot.com/-sMYtBAPkrms/YBMdUEXIx_I/AAAAAAAAeZg/FErofYz40Sgdk9f4xtEbgPwdgGx9PJHQQCLcBGAsYHQ/d/heroscreen.cc-V1-01282021-circuit-board-HD.png");
     color: whitesmoke; 
    
 }
