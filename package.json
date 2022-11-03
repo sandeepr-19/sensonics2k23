@@ -2,6 +2,10 @@
   "name": "eareyes2k221",
   "version": "1.0.0",
   "description": "registration platform",
+  "engines": {
+    "node": ">=16.15.1",
+    "npm": ">=8.11.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
