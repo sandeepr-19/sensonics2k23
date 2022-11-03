@@ -21,17 +21,17 @@ html(lang='en')
         .d-flex.ru.flex-column.mx-3
             p.h3 Instructions 
             br
-            p.h6 1.Paper from any domain is permitted to present.
+            p.h6 1. Paper from any domain is permitted to present.
             br 
-            p.h6 2.For a team maximum of Two members are allowed to participate.
+            p.h6 2. For a team maximum of Two members are allowed to participate.
             br 
-            p.h6 3.Abstract should be submitted at the time of registration.
+            p.h6 3. Abstract should be submitted at the time of registration.
             br
-            p.h6 4.Plagiarism should be avoided.
+            p.h6 4. Plagiarism should be avoided.
             br
-            p.h6 5.Registration closes on 10-11-2022.
+            p.h6 5. Registration closes on 10-11-2022.
             br
-            p.h6 8.Event date 15-11-2022.
+            p.h6 6. Event date 15-11-2022.
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
             form.needs-validation(action="event1_d", method="post", novalidate)
                 .form-floating.mb-3.mt-3
@@ -57,17 +57,17 @@ html(lang='en')
                         button.btn.btn-dark#m3(type='button') 3
 
                 .form-floating.mb-3.mt-3#mn2
-                    input.form-control(type="text",name="name2")
+                    input.form-control#hiden2(type="text",name="name2")
                     label(for="name2")  Teammate 2 Name 
                 .form-floating.mb-3.mt-3#mr2
-                    input.form-control(type="text", name="rollno2")
+                    input.form-control#hider2(type="text", name="rollno2")
                     label(for="rollno2")  Roll No
                 
                 .form-floating.mb-3.mt-3#mn3
-                    input.form-control(type="text",name="name3")
+                    input.form-control#hiden3(type="text",name="name3")
                     label(for="name3")  Teammate 3 Name 
                 .form-floating.mb-3.mt-3#mr3
-                    input.form-control(type="text", name="rollno3")
+                    input.form-control#hider3(type="text", name="rollno3")
                     label(for="rollno3")  Roll No
                 .form-floating.mb-3.mt-3
                     input.form-control(type="text",name="title",required)

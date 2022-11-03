@@ -69,7 +69,7 @@ app.post("/event1_d", enc, (req, res) => {
     const result = await dbo.collection("event1").insertOne(doc);
     db.close();
   });
-  res.send("data successfully stored");
+  res.render("landing.pug");
 });
 
 app.post("/event2_d", enc, (req, res) => {
