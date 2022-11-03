@@ -6,6 +6,12 @@
   font-style: regular;
 }
 @font-face {
+  font-family: 'Drexs';
+  src: local('Drexs'), local('Drexs-Regular'),
+      url('../assets/Drexs.otf') format('truetype');
+  font-style: regular;
+}
+@font-face {
   font-family: 'MBF Space';
   src: url('../assets/MBFSpace.eot');
   src: local('MBF Space'), local('MBFSpace'),
@@ -248,11 +254,12 @@ margin-bottom: 10px;
    #eh1{
     font-size: 200%;
    }
-   #ep{
-    font-size: 100%;
+   #ep1,#ep2,#ep3,#ep4,#ep5,#ep6{
+    font-family: 'Drexs';
+    font-weight: 50;
    }
    #er1,#er2,#er3,#er4,#er5,#er6{
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: 50%;
    }
    #er2,#er3,#er4,#er1{
