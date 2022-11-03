@@ -208,7 +208,7 @@ app.post("/event6_d", enc, (req, res) => {
     const result = await dbo.collection("event6").insertOne(doc);
     db.close();
   });
-  res.send("data successfully stored");
+  res.render("landing.pug");
 });
 
 app.listen(PORT, () => {
