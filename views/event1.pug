@@ -15,23 +15,16 @@ html(lang='en')
         link(rel='stylesheet' href='./client/event.css')
         title Eareyes
     body.align-items-center.justify-content-center.d-flex.flex-column
-        p.h1 Sparkle 
-        p.h2 Paper Presentaion 
-        
+        p.h1.mt-4.mb-4 Sparkle 
+        p.h2.mb-4 Paper Presentaion 
         .d-flex.ru.flex-column.mx-3
-            p.h3 Instructions 
-            br
-            p.h6 1. Paper from any domain is permitted to present.
-            br 
-            p.h6 2. For a team maximum of Two members are allowed to participate.
-            br 
-            p.h6 3. Abstract should be submitted at the time of registration.
-            br
-            p.h6 4. Plagiarism should be avoided.
-            br
-            p.h6 5. Registration closes on 10-11-2022.
-            br
-            p.h6 6. Event date 14-11-2022.
+            p.h4.mb-2 Instructions 
+            p.h6.mb-3 1. Paper from any domain is permitted to present. 
+            p.h6.mb-3 2. For a team maximum of Two members are allowed to participate. 
+            p.h6.mb-3 3. Abstract should be submitted at the time of registration.
+            p.h6.mb-3 4. Plagiarism should be avoided.
+            p.h6.mb-3 5. Registration closes on 10-11-2022.
+            p.h6.mb-3 6. Event date 14-11-2022.
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
             form.needs-validation(action="event1_d", method="post", novalidate)
                 .form-floating.mb-3.mt-3
@@ -47,7 +40,7 @@ html(lang='en')
                     input.form-control(type="email", name="email",required)
                     label(for="email")  Email
                 .form-floating.mb-3.mt-3
-                    input.form-control(type="text", name="mobileno",maxlength="10",required)
+                    input.form-control(type="tel",pattern="[0-9]{10}", name="mobileno",maxlength="10",required)
                     label(for="mobileno")  Whatsapp No
                 .form-floating.mb-3.mt-3
                     p.h6 select the no of team members

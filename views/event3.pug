@@ -16,38 +16,24 @@ html(lang='en')
         link(rel='stylesheet' href='./client/event.css')
         title Eareyes
     body.align-items-center.justify-content-center.d-flex.flex-column
-        p.h1 pseudo magic 
-        p.h2 coding
+        p.h1.mt-4.mb-4 pseudo magic 
+        p.h2.mb-4 coding
         .d-flex.ru.flex-column.mx-3
-            p.h3 Instructions 
-            br
-            p.h6 1. Individual event.
-            br 
-            p.h6 2. Both preliminary and main event will be conducted through HACKERANK platform
-            br 
-            p.h4 PRELIMS:
-            br
-            p.h6 Note: prelims will be conducted only if the participants count exceeds the threshold.
-            br
-            p.h6 1. Preliminary round will be conducted through online mode.
-            br
-            p.h6 2. Preliminary round will contain 3 competitive coding questions and duration will be around 30 minutes.
-            br
-            p.h6 3. Participants can code in their preferred languages.
-            br
-            p.h6 4. Shortlisted candidates will only be allowed to attend the main event.
-            br
-            p.h4 Main Event:
-            br
-            p.h6 1. Computers will be provided to the participants during the event.
-            br
-            p.h6 2. The level of difficulty will be increased.
-            br
-            p.h6 3. Duration of the contest will be 1 hour.
-            br
-            p.h6 4. Leaderboard will be based on time and space complexity.
-            br
-            p.h6 5. Winner and runner will be announced on validatory function at the end of the day. 
+            p.h3.mb-2 Instructions 
+            p.h6.mb-3 1. Individual event. 
+            p.h6.mb-3 2. Both preliminary and main event will be conducted through HACKERANK platform 
+            p.h4.mb-2 PRELIMS:
+            p.h6.mb-3 Note: prelims will be conducted only if the participants count exceeds the threshold.
+            p.h6.mb-3 1. Preliminary round will be conducted through online mode.
+            p.h6.mb-3 2. Preliminary round will contain 3 competitive coding questions and duration will be around 30 minutes.
+            p.h6.mb-3 3. Participants can code in their preferred languages.
+            p.h6.mb-3 4. Shortlisted candidates will only be allowed to attend the main event.
+            p.h4.mb-2 Main Event:
+            p.h6.mb-3 1. Computers will be provided to the participants during the event.
+            p.h6.mb-3 2. The level of difficulty will be increased.
+            p.h6.mb-3 3. Duration of the contest will be 1 hour.
+            p.h6.mb-3 4. Leaderboard will be based on time and space complexity.
+            p.h6.mb-3 5. Winner and runner will be announced on validatory function at the end of the day. 
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
             form.needs-validation(action="event3_d", method="post", novalidate)
                  
@@ -61,7 +47,7 @@ html(lang='en')
                     input.form-control(type="email", name="email",required)
                     label(for="email")  Email
                 .form-floating.mb-3.mt-3
-                    input.form-control(type="text", name="mobileno",maxlength="10",required)
+                    input.form-control(type="tel",pattern="[0-9]{10}", name="mobileno",maxlength="10",required)
                     label(for="mobileno")  Whatsapp No
                 .mb-3.mt-3
                     p.h6 Make sure you join the whatsapp group.

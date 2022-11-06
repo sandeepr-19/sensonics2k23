@@ -16,18 +16,14 @@ html(lang='en')
         link(rel='stylesheet' href='./client/event.css')
         title Eareyes
     body.align-items-center.justify-content-center.d-flex.flex-column
-        p.h1 circuitron 
-        p.h2 circuit debugging 
+        p.h1.mt-4.mb-4 circuitron 
+        p.h2.mb-4 circuit debugging 
         .d-flex.ru.flex-column.mx-3
-            p.h3 Instructions 
-            br
-            p.h6 1. The event consists of 2 rounds. 
-            br 
-            p.h6 2. Round 1 is tech quiz. the ones who are selected in round 1 are qualified for round 2.
-            br 
-            p.h6 3. The second round is circuit debugging. 
-            br
-            p.h6 4. you will be given 30 minutes to make circuit and obtain the output.
+            p.h3.mb-2 Instructions 
+            p.h6.mb-3 1. The event consists of 2 rounds.  
+            p.h6.mb-3 2. Round 1 is tech quiz. the ones who are selected in round 1 are qualified for round 2. 
+            p.h6.mb-3 3. The second round is circuit debugging. 
+            p.h6.mb-3 4. you will be given 30 minutes to make circuit and obtain the output.
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
             form.needs-validation(action="event4_d", method="post", novalidate)
                  
@@ -41,7 +37,7 @@ html(lang='en')
                     input.form-control(type="email", name="email",required)
                     label(for="email")  Email
                 .form-floating.mb-3.mt-3
-                    input.form-control(type="text", name="mobileno",maxlength="10",required)
+                    input.form-control(type="tel",pattern="[0-9]{10}", name="mobileno",maxlength="10",required)
                     label(for="mobileno")  Whatsapp No
                 .mb-3.mt-3
                     p.h6 Make sure you join the whatsapp group.

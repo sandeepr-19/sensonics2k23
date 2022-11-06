@@ -16,28 +16,19 @@ html(lang='en')
         link(rel='stylesheet' href='./client/event.css')
         title Eareyes
     body.align-items-center.justify-content-center.d-flex.flex-column
-        p.h1 yantarang 
-        p.h2 project presentation  
+        p.h1.mt-4.mb-4 yantarang 
+        p.h2.mb-4 project presentation  
         .d-flex.ru.flex-column.mx-3
-            p.h3 Instructions 
-            br
-            p.h6 1. Maximum Team members should not exceed 3 members.
-            br 
-            p.h6 2. Projects can be presented of any Domain.
-            br 
-            p.h6 3. Each team will be given a maximum of 7 minutes to 5 minutes to present and 2 minutes for Q/A session.
-            br
-            p.h6 4. Abstract should be submitted in the pdf format while registering.
-            br
-            p.h6 5. Proof of concept of your project can be either photo or video mode.
-            br
-            p.h6 6. Plagiarism should be avoided.
-            br
-            p.h6 7. Team with prototype will be given more preferences during selection process.
-            br
-            p.h6 8. After registration, the team leaders should join in the Whatsapp Group from the link given in G-Form.
-            br
-            p.h6 9. Last date for the selected team to Register : 10-11-2022.
+            p.h3.mb-2 Instructions 
+            p.h6.mb-3 1. Maximum Team members should not exceed 3 members. 
+            p.h6.mb-3 2. Projects can be presented of any Domain. 
+            p.h6.mb-3 3. Each team will be given a maximum of 7 minutes to 5 minutes to present and 2 minutes for Q/A session.
+            p.h6.mb-3 4. Abstract should be submitted in the pdf format while registering.
+            p.h6.mb-3 5. Proof of concept of your project can be either photo or video mode.
+            p.h6.mb-3 6. Plagiarism should be avoided.
+            p.h6.mb-3 7. Team with prototype will be given more preferences during selection process.
+            p.h6.mb-3 8. After registration, the team leaders should join in the Whatsapp Group from the link given in G-Form.
+            p.h6.mb-3 9. Last date for the selected team to Register : 10-11-2022.
         .d-flex.flex-column.w-75#form.align-items-center.justify-content-center
             form.needs-validation(action="event2_d", method="post", novalidate)
                 .form-floating.mb-3.mt-3
@@ -53,7 +44,7 @@ html(lang='en')
                     input.form-control(type="email", name="email",required)
                     label(for="email")  Email
                 .form-floating.mb-3.mt-3
-                    input.form-control(type="text", name="mobileno",maxlength="10",required)
+                    input.form-control(type="tel",pattern="[0-9]{10}", name="mobileno",maxlength="10",required)
                     label(for="mobileno")  Whatsapp No
                 .form-floating.mb-3.mt-3
                     p.h6 select the no of team members
@@ -63,17 +54,17 @@ html(lang='en')
                         button.btn.btn-dark#m3(type='button') 3
 
                 .form-floating.mb-3.mt-3#mn2
-                    input.form-control(type="text",name="name2")
+                    input.form-control#hiden2(type="text",name="name2")
                     label(for="name2")  member 2 Name 
                 .form-floating.mb-3.mt-3#mr2
-                    input.form-control(type="text", name="rollno2")
+                    input.form-control#hider2(type="text", name="rollno2")
                     label(for="rollno2")  Roll No
                 
                 .form-floating.mb-3.mt-3#mn3
-                    input.form-control(type="text",name="name3")
+                    input.form-control#hiden3(type="text",name="name3")
                     label(for="name3")  member 3 Name 
                 .form-floating.mb-3.mt-3#mr3
-                    input.form-control(type="text", name="rollno3")
+                    input.form-control#hider3(type="text", name="rollno3")
                     label(for="rollno3")  Roll No
                 .form-floating.mb-3.mt-3
                     input.form-control(type="text",name="title",required)
