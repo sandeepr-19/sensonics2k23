@@ -43,9 +43,11 @@ general
   }
   html{
     scroll-behavior: smooth;
+    min-height: 100vh;
   }
   body {
     position: relative;
+    min-height: 100vh;
   }
 
 
