@@ -41,7 +41,9 @@ general
     margin: 0;
     box-sizing: border-box;
   }
-  
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     position: relative;
   }
