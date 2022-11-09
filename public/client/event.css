@@ -5,6 +5,13 @@ canvas {
     z-index: -1;
     min-height: 100vh;
   }
+  
+@font-face {
+  font-family: 'Drexs';
+  src: local('Drexs'), local('Drexs-Regular'),
+      url('../assets/Drexs.otf') format('truetype');
+  font-style: regular;
+}
   @font-face {
     font-family: 'MBF Space';
     src: url('../assets/MBFSpace.eot');
@@ -27,3 +34,6 @@ p, .ru{
   max-width: 1000px;
 }
 #mr2,#mr3,#mn2,#mn3,.mem{display: none;}
+.h6{
+  font-family: 'Drexs';
+}
