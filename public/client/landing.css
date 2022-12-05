@@ -6,9 +6,9 @@
   font-style: regular;
 }
 @font-face {
-  font-family: 'potra';
-  src: local('potra'), local('potra-Regular'),
-      url('../assets/potra.ttf') format('truetype');
+  font-family: 'Potra';
+  src: local('Potra'), local('Potra-Regular'),
+      url('../assets/Potra.ttf') format('truetype');
   font-style: regular;
 }
 @font-face {
