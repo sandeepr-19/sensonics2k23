@@ -1,5 +1,5 @@
 {
-  "name": "eareyes2k221",
+  "name": "eareyes2k22",
   "version": "1.0.0",
   "description": "registration platform",
   "engines": {
@@ -8,8 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "sandeep",
   "license": "ISC",
