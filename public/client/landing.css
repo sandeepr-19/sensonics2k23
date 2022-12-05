@@ -6,6 +6,12 @@
   font-style: regular;
 }
 @font-face {
+  font-family: 'potra';
+  src: local('potra'), local('potra-Regular'),
+      url('../assets/potra.ttf') format('truetype');
+  font-style: regular;
+}
+@font-face {
   font-family: 'Drexs';
   src: local('Drexs'), local('Drexs-Regular'),
       url('../assets/Drexs.otf') format('truetype');
