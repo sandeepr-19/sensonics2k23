@@ -267,7 +267,7 @@ gsap
 //dev pin
 ScrollTrigger.create({
   trigger: "#dev",
-  start: "top 30%",
+  start: "top 25%",
   //scroller: "#scrollsnap",
   endTrigger: "#bl1",
   end: "bottom 60%",
@@ -317,21 +317,21 @@ gsap
     opacity: 0,
   });
 //events redirection
-document.getElementById("er1").addEventListener("click", () => {
+document.getElementById("event1").addEventListener("click", () => {
   window.location.href = window.location.origin + "/event1";
 });
-document.getElementById("er2").addEventListener("click", () => {
+document.getElementById("event2").addEventListener("click", () => {
   window.location.href = window.location.origin + "/event2";
 });
-document.getElementById("er3").addEventListener("click", () => {
+document.getElementById("event3").addEventListener("click", () => {
   window.location.href = window.location.origin + "/event3";
 });
-document.getElementById("er4").addEventListener("click", () => {
+document.getElementById("event4").addEventListener("click", () => {
   window.location.href = window.location.origin + "/event4";
 });
-document.getElementById("er5").addEventListener("click", () => {
+document.getElementById("event5").addEventListener("click", () => {
   window.location.href = window.location.origin + "/event5";
 });
-document.getElementById("er6").addEventListener("click", () => {
+document.getElementById("event6").addEventListener("click", () => {
   window.location.href = window.location.origin + "/event6";
 });

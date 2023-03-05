@@ -99,8 +99,23 @@ nav
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
-  
+  .navtitle{
+    font-size: 130%;
+    padding-top: 10px;
+    margin: 10px 0px 0px 10px;
+  }
+  @media  only screen and (max-width: 900px){
+    .navbar{
+      display: none;
+    }
+  }
+  @media  only screen and (min-width: 900px){
+    .navtitle{
+      display: none;
+    }
+  }
   .nav-menu {
     display: flex;
     color: cornsilk;
@@ -299,6 +314,17 @@ margin-bottom: 10px;
    .spin{ text-align: center;
    } 
    }
+/** event-venue */
+#event-venue iframe{
+  width: 60vw;
+  margin-top: 20px;
+  border-radius: 15px;
+  
+}
+#event-venue{
+  font-family: "MBF Space";
+  color: cornsilk;
+}
 /* dev */
 #dev{
   color: cornsilk;
